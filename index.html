@@ -26,7 +26,7 @@
 <div class="container">
    <script>
         // Fetch external file and inject it into the target div
-        fetch('header.html')
+        fetch('include_header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
@@ -129,32 +129,12 @@
         fetch('portfolio.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('portfolio').innerHTML = data;
+                document.getElementById('include_portfolio').innerHTML = data;
             });
     </script>
 
 	</section>
- 
-  <div class="row noDisplay ">
-    <div class="column_half left_half">
-      <h2 class="column_title">LEFT COLUMN</h2>
-    </div>
-    <div class="column_half right_half">
-      <h2 class="column_title">RIGHT COLUMN</h2>
-    </div>
-  </div>
-  <div class="social noDisplay">
-    <p class="social_icon"><img src="sd/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="sd/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="sd/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="sd/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-  </div>
-	<hr>
-	
-
-	
-	
-	
+ 	
 	
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2026 Erica McKasson</div>
