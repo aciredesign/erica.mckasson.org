@@ -1,0 +1,31 @@
+<section id="wingsContainer">
+<div class="row">
+<div class="column_half left_half"> 
+  
+  <!-- The Target Display Container -->
+  <div class="targetContainer" style="margin-top: 15px; padding: 10px; border-radius: 8px;"> 
+    
+    <!-- Image Element (Hidden by default) --> 
+    <img class="targetImage" src="_images/breakfast-web.jpg" alt="Display" style="max-width: 100%; max-height: 400px; border-radius: 4px;" onclick="displayMedia('_images/breakfast-web.mp4', this)"> 
+    
+    <!-- Video Element (Hidden by default) -->
+    <video class="targetVideo" controls style="display: none; max-width: 100%; height: auto; max-height: 400px; border-radius: 4px; margin: auto;"> Your browser does not support the video tag. </video>
+    
+    <!-- The Buttons (Use your local relative file paths here) -->
+	  <div class="row text-center">
+     <button onclick="displayMedia('_images/breakfast-web.mp4', this)"><img src="_images/breakfast-web.jpg" width="75px" alt=""></button>
+		  </div>
+  </div>
+  </div>
+  <div class="column_half right_half">
+    <h2>Breakfast landing page</h2>
+    <p class="text-center"> <span class="badge">Web design</span><span class="badge">Web development</span>  </p>
+	  <p>Each sales cycle, new promotions would be showcased on their landing pages. I would work with the content team to come up with a plan and then would design and develop the html components to showcase the products; taking into accound other promotional materials for a consistant omnichannel experience. 
+	  </p>
+  </div>
+</div>
+	<script>
+  const video = document.getElementByClass('breakfast-web.mp4');
+  video.playbackRate = .5; // Set your desired speed here (1.0 is normal speed)
+</script>
+</section>

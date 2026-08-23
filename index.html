@@ -38,8 +38,8 @@
     <article class="left_article">
 		
       <h1>UX + Visual Designer</h1>
-      <h3>Creating intuitive experiences through strategy, storytelling, and design </h3>
-<p>I’m a UX and product designer who loves turning complex problems into simple, useful, and genuinely enjoyable experiences. With 15+ years spanning UX, visual design, research, branding, front-end development, and content, I bring a broad perspective to every project—and I’m quick to learn whatever the problem demands. I thrive at the intersection of creativity, strategy, and collaboration, using curiosity and a healthy dose of “let’s figure it out” to create experiences that work for both people and the business.</p>
+      <h3>Creating intuitive experiences through strategy, storytelling &amp;&nbsp; design </h3>
+<p>I’m Erica McKasson,&nbsp; a UX and product designer who turns complex problems into enjoyable experiences. With 15+ years spanning UX, visual design, research, branding, front-end development, and content, I bring a broad perspective to every project. I’m quick to learn whatever the problem demands, from complex financial services to new retail experinces,&nbsp; &nbsp; &nbsp;I thrive at the intersection of creativity, strategy, and collaboration.&nbsp;</p>
     </article>
 
 	  <aside class="right_article">
@@ -122,26 +122,73 @@
 	  </aside>
 		</div>
   </section>
-	
-	<section id="portfolio">
+	<hr>
+	<section id="include_wings">
 	 <script>
         // Fetch external file and inject it into the target div
-        fetch('portfolio.html')
+        fetch('include_wings.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('include_portfolio').innerHTML = data;
+                document.getElementById('include_wings').innerHTML = data;
             });
     </script>
 
 	</section>
- 	
+ 	<hr>
+	<section id="include_carwash">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_carwash.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('include_carwash').innerHTML = data;
+            });
+    </script>
+
+	</section>
+ 	<hr>
 	
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2026 Erica McKasson</div>
   </footer>
 </div>
-	
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+function displayMedia(mediaUrl, button) {
+  // Find the closest target container
+  const container = button.closest('.targetContainer');
+
+  // Find the image and video inside that container
+  const imgElement = container.querySelector('.targetImage');
+  const videoElement = container.querySelector('.targetVideo');
+
+  // Check if the file URL ends with .mp4
+  if (mediaUrl.toLowerCase().endsWith('.mp4')) {
+
+    // Hide image, show video
+    imgElement.style.display = "none";
+    videoElement.style.display = "block";
+
+    // Load and play video
+    videoElement.src = mediaUrl;
+    videoElement.load();
+    videoElement.play();
+
+  } else {
+
+    // Pause video
+    videoElement.pause();
+
+    // Hide video, show image
+    videoElement.style.display = "none";
+    imgElement.style.display = "block";
+
+    // Change image
+    imgElement.src = mediaUrl;
+  }
+}
+</script>
 </body>
 	
 </html>
