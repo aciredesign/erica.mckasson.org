@@ -1,0 +1,30 @@
+<section id="whiskersstickersContainer">
+<div class="row">
+<div class="column_half left_half"> 
+  
+  <!-- The Target Display Container -->
+  <div class="targetContainer" style="margin-top: 15px; padding: 10px; border-radius: 8px;"> 
+    
+    <!-- Image Element (Hidden by default) --> 
+    <img class="targetImage" src="_images/graphic-stickers.jpg" alt="Display" style="max-width: 100%; max-height: 400px; border-radius: 4px;" onclick="displayMedia('_images/breakfast-web.mp4', this)"> 
+    
+    <!-- Video Element (Hidden by default) -->
+    <video class="targetVideo" controls style="display: none; max-width: 100%; height: auto; max-height: 400px; border-radius: 4px; margin: auto;"> Your browser does not support the video tag. </video>
+    
+    <!-- The Buttons (Use your local relative file paths here) -->
+	  <div class="row text-center">
+     <button onclick="displayMedia('_images/graphic-stickers.jpg', this)"><img src="_images/graphic-stickers.jpg" width="75px" alt=""></button>
+	    </div>
+  </div>
+  </div>
+  <div class="column_half right_half">
+    <h2>Whiskers sticker pack&nbsp;</h2>
+    <p class="text-center"> <span class="badge">Branding</span> <span class="badge">Graphic design</span>  <span class="badge">Print</span>  </p>
+	  <p>Stickers make a great cheap purchase at events, so natually Whiskers needed specialty stickers for our on-going and one-time events. Keeping with the "Whiskers Kitty" theme, he's gone to basketball games, Caturdays at the library, kitten yoga and the annual fundraiser, the Meow Mixer.</p>
+  </div>
+</div>
+	<script>
+  const video = document.getElementByClass('breakfast-web.mp4');
+  video.playbackRate = .5; // Set your desired speed here (1.0 is normal speed)
+</script>
+</section>
