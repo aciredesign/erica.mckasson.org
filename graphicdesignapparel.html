@@ -46,6 +46,20 @@
   </section>
 	<hr>
 	
+	<section id="include_skywalker">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_skywalker.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('skywalker').innerHTML = data;
+            });
+    </script>
+		
+		<div id="skywalker"></div>
+
+	</section>
+		<hr>	
 	<section id="include_whiskersstickers">
 	 <script>
         // Fetch external file and inject it into the target div
