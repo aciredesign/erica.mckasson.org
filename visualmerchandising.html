@@ -74,6 +74,20 @@
 
 	</section>
 		<hr>
+	<section id="include_headers">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_headers.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headers').innerHTML = data;
+            });
+    </script>
+		
+		<div id="headers"></div>
+
+	</section>
+		<hr>
 	
 	
 	
