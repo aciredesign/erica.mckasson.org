@@ -535,6 +535,23 @@ font-size: 32px;
 	padding-top:20px;
 	
 }
+.hexagon-horizontal-sm {
+	height: 70px;
+	width:90px;
+  /* Maintains geometric accuracy using cos(30deg) */
+   aspect-ratio: 1.1547 / .75; 
+  background: #f1624a;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+font-size:12px;
+	padding:4px;
+	text-align: center;
+	margin: 12px auto ;
+	padding-top:10px;
+	color: #FFF;
+	float: left;
+	display: block;
+	
+}
 hr{
 	border: dashed 2px #f69280;
 	clear: both;
@@ -553,4 +570,21 @@ hr{
 	white-space: nowrap;
 	display: inline-block;
 
+}
+
+
+/*portfolio links*/
+.portfolio-links{
+	width:140px;
+	height:112px;
+	float: left;
+	
+	
+}
+
+.portfolio-links-container {
+  display: flex;
+	 flex-wrap: wrap; 
+  justify-content: space-evenly; /* Equal space between items and outer edges */
+	background: #03747f;
 }
