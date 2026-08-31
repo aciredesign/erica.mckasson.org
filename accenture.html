@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UX + Visual Designer | Erica McKasson</title>
+<title>Design Lead | Erica McKasson</title>
 <link href="site.css" rel="stylesheet" type="text/css">
 	 <link rel="icon" type="image/x-icon" href="_images/favicon.ico">
 	 <!-- Open Graph Meta Tags -->
@@ -53,11 +53,13 @@
 
   
   <section>
-    <div class="row">
+	  <div class="row text-center"> <h4>Graphic Designer  <span class="coral">→</span>  Web Designer/Developer <span class="coral">→</span>  UX/UI Designer &amp; Researcher <span class="coral">→</span>  Design Lead</h4></div>
+    
+	  <div class="row">
       <article class="left_article">
-        <h1>UX + Visual Designer</h1>
+        <h1>Design Lead</h1>
         <h3>Creating intuitive experiences through strategy, storytelling &amp; design </h3>
-        <p>I’m Erica McKasson, a UX and product designer who turns complex problems into enjoyable experiences. With 15+ years spanning UX, visual design, research, branding, front-end development, and content, I bring a broad perspective to every project. I’m quick to learn whatever the problem demands, from complex financial services to new retail experinces, I thrive at the intersection of creativity, strategy, and collaboration.</p>
+        <p>I’m Erica McKasson, a UX and product designer who turns complex problems into enjoyable experiences. With 15+ years spanning UX, visual design, research, branding, front-end development, and content, I bring a broad perspective to every project. I’m quick to learn whatever the problem demands, from complex financial services to new retail experiences, I thrive at the intersection of creativity, strategy, and collaboration.</p>
       </article>
       <aside class="right_article">
         <div id="myCarousel" class="portfolio-carousel slide" data-bs-ride="carousel"> 
@@ -109,16 +111,7 @@
     </div>
   </section>
 	
-	   <section id="include_portfoliolinks" > 
-    <script>
-        // Fetch external file and inject it into the target div
-        fetch('include_portfoliolinks.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('include_portfoliolinks').innerHTML = data;
-            });
-    </script> 
-  </section>
+	
   <div class="row text-center" style="padding: 12px">
     <h1>Featured projects</h1>
   </div>
@@ -126,7 +119,7 @@
   <section id="include_wings"> 
     <script>
         // Fetch external file and inject it into the target div
-        fetch('include_wings.html')
+        fetch('include_wings2.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('include_wings').innerHTML = data;
@@ -183,7 +176,58 @@ function displayMedia(mediaUrl, button) {
     // Change image
     imgElement.src = mediaUrl;
   }
+  }
 }
 </script>
+	
+	<!--modal-->
+	
+	<script>
+function openMediaModal(clickedMedia) {
+
+  const modal = document.getElementById('mediaModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "flex";
+
+  if (clickedMedia.tagName === "IMG") {
+
+    modalImage.src = clickedMedia.src;
+    modalImage.alt = clickedMedia.alt;
+
+    modalImage.style.display = "block";
+    modalVideo.style.display = "none";
+
+  } else if (clickedMedia.tagName === "VIDEO") {
+
+    modalVideo.src = clickedMedia.currentSrc || clickedMedia.src;
+
+    modalVideo.style.display = "block";
+    modalImage.style.display = "none";
+  }
+}
+
+function closeMediaModal() {
+
+  const modal = document.getElementById('mediaModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "none";
+
+  // Stop video when modal closes
+  modalVideo.pause();
+}
+	</script>
+	
+<div id="mediaModal" class="media-modal">
+
+  <span class="close-modal" onclick="closeMediaModal()">&times;</span>
+
+  <img id="modalImage" class="modal-content">
+
+  <video id="modalVideo" class="modal-content" controls></video>
+
+</div>
 </body>
 </html>
