@@ -132,6 +132,56 @@ function displayMedia(mediaUrl, button) {
   }
 }
 </script>
+		<!--modal-->
+	
+	<script>
+function openMediaModal(clickedMedia) {
+
+  const modal = document.getElementById('mediaModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "flex";
+
+  if (clickedMedia.tagName === "IMG") {
+
+    modalImage.src = clickedMedia.src;
+    modalImage.alt = clickedMedia.alt;
+
+    modalImage.style.display = "block";
+    modalVideo.style.display = "none";
+
+  } else if (clickedMedia.tagName === "VIDEO") {
+
+    modalVideo.src = clickedMedia.currentSrc || clickedMedia.src;
+
+    modalVideo.style.display = "block";
+    modalImage.style.display = "none";
+  }
+}
+
+function closeMediaModal() {
+
+  const modal = document.getElementById('mediaModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "none";
+
+  // Stop video when modal closes
+  modalVideo.pause();
+}
+	</script>
+	
+	
+	<div id="mediaModal" class="media-modal">
+
+  <span class="close-modal" onclick="closeMediaModal()">&times;</span>
+
+  <img id="modalImage" class="modal-content">
+
+  <video id="modalVideo" class="modal-content" controls></video>
+
+</div>
 </body>
 	
 </html>
