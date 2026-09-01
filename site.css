@@ -465,7 +465,7 @@ font-size: 32px;
 }
 
 @media (min-width: 1001px) {
-}
+
 .thumbnail {
 	width: 100px;
 	border-radius: 200px;
@@ -498,7 +498,7 @@ font-size: 32px;
 	opacity: 0.5;
 }
 #menu {
-}
+}}
 
 
 
