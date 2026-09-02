@@ -45,11 +45,24 @@
 		</div>
   </section>
 	<hr>
-	
+	<section id="include_dpp">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_dpp.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('dpp').innerHTML = data;
+            });
+    </script>
+		
+		<div id="dpp"></div>
+
+	</section>
+		<hr>
 	<section id="include_wings">
 	 <script>
         // Fetch external file and inject it into the target div
-        fetch('include_wings2.html')
+        fetch('include_wings.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('wings').innerHTML = data;

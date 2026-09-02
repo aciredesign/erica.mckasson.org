@@ -61,6 +61,21 @@
 	</section>
 
 		<hr>
+	<section id="include_wingslanding">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_wingslanding.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('wingslanding').innerHTML = data;
+            });
+    </script>
+		
+		<div id="wingslanding"></div>
+
+	</section>
+
+		<hr>
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2026 Erica McKasson</div>
   </footer>
