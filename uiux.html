@@ -174,29 +174,60 @@ function openMediaModal(clickedMedia) {
     modalImage.style.display = "none";
   }
 }
+		
+		
+		
+		
+		
+		
 
-function closeMediaModal() {
+		
+		
+		
+		
+	function closeMediaModal(event) {
+
+  // Only close when clicking the modal background
+  if (event.target !== event.currentTarget) {
+    return;
+  }
 
   const modal = document.getElementById('mediaModal');
   const modalVideo = document.getElementById('modalVideo');
 
   modal.style.display = "none";
 
-  // Stop video when modal closes
   modalVideo.pause();
-}
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</script>
 	
 	
-	<div id="mediaModal" class="media-modal">
+	
+	<div id="mediaModal" class="media-modal" onclick="closeMediaModal(event)">
 
-  <span class="close-modal" onclick="closeMediaModal()">&times;</span>
+  <span class="close-modal">&times;</span>
 
   <img id="modalImage" class="modal-content">
 
-  <video id="modalVideo" class="modal-content" controls></video>
+  <video 
+    id="modalVideo" 
+    class="modal-content" 
+    controls
+    onclick="event.stopPropagation()">
+  </video>
 
 </div>
+	
+	
 </body>
 	
 </html>
