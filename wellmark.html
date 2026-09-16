@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI/UX | Erica McKasson</title>
+<link href="site.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!--start fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<!--end fonts-->
+	
+	<!--start carousel-->
+<link href="carousel.css" rel="stylesheet">	
+	<!--end carousel-->
+</head>
+<body>
+<div class="container">
+   <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+	<div id="header-container"></div>
+  <section>
+	   <div class="row text-center"> <h4>Graphic Designer  <span class="coral">→</span>  Web Designer/Developer <span class="coral">→</span>  UX/UI Designer &amp; Researcher <span class="coral">→</span>  Design Lead</h4></div>
+   <div class="row">
+   <article class="left_article">
+        <h1>Design Lead</h1>
+        <h3>Creating intuitive experiences through strategy, storytelling &amp; design </h3>
+        <p>I’m Erica McKasson, a UX and product designer who turns complex problems into enjoyable experiences. With 15+ years spanning UX, visual design, research, branding, front-end development, and content, I bring a broad perspective to every project. I’m quick to learn whatever the problem demands, from complex financial services to new retail experiences, I thrive at the intersection of creativity, strategy, and collaboration.</p>
+      </article>
+	   
+	   <aside class="right_article">
+        <div id="myCarousel" class="portfolio-carousel slide" data-bs-ride="carousel"> 
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" 
+                data-bs-target="#myCarousel" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1"></button>
+            <button type="button" 
+                data-bs-target="#myCarousel" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2"></button>
+            <button type="button" 
+                data-bs-target="#myCarousel" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3"></button>
+          </div>
+          
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active"> <img src="_images/ss/ss-skywalker.jpg"  
+                 class=" "  alt="Skywalker stilts poster, countertop mat, and packaging"> </div>
+            <div class="carousel-item"> <img src="_images/ss/ss-dttn.png" 
+                 class=""   alt="Whiskers TNR Meow Mixer Print and Social Media examples"> </div>
+            <div class="carousel-item"> <img src="_images/research-persona.jpg" 
+                 class=" "  alt="Personas"> </div>
+          </div>
+          
+          <!-- Previous 
+          <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#myCarousel" 
+            data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>-->
+          
+          <!-- Next 
+          <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#myCarousel" 
+            data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>-->
+        </div>
+      </aside>
+
+		</div>
+  </section>
+	  <div class="row text-center" style="padding: 12px">
+    <h1>Featured projects</h1>
+  </div>
+
+	<hr>
+	<section id="include_dpp">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_dpp.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('dpp').innerHTML = data;
+            });
+    </script>
+		
+		<div id="dpp"></div>
+
+	</section>
+		<hr>
+	<section id="include_wings">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_wings.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('wings').innerHTML = data;
+            });
+    </script>
+		
+		<div id="wings"></div>
+
+	</section>
+		<hr>
+		<section id="include_carwash">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_carwash.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('carwash').innerHTML = data;
+            });
+    </script>
+		
+		<div id="carwash"></div>
+
+	</section>
+
+ 
+	<hr>
+	
+		<section id="include_mia">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_mia.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('mia').innerHTML = data;
+            });
+    </script>
+		
+		<div id="mia"></div>
+
+	</section>
+	<hr>
+	
+		<section id="include_booth">
+	 <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_booth.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('booth').innerHTML = data;
+            });
+    </script>
+		
+		<div id="booth"></div>
+
+	</section>
+	
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2026 Erica McKasson</div>
+  </footer>
+</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+function displayMedia(mediaUrl, button) {
+  // Find the closest target container
+  const container = button.closest('.targetContainer');
+
+  // Find the image and video inside that container
+  const imgElement = container.querySelector('.targetImage');
+  const videoElement = container.querySelector('.targetVideo');
+
+  // Check if the file URL ends with .mp4
+  if (mediaUrl.toLowerCase().endsWith('.mp4')) {
+
+    // Hide image, show video
+    imgElement.style.display = "none";
+    videoElement.style.display = "block";
+
+    // Load and play video
+    videoElement.src = mediaUrl;
+    videoElement.load();
+    videoElement.play();
+
+  } else {
+
+    // Pause video
+    videoElement.pause();
+
+    // Hide video, show image
+    videoElement.style.display = "none";
+    imgElement.style.display = "block";
+
+    // Change image
+    imgElement.src = mediaUrl;
+  }
+}
+</script>
+	
+		<!--modal-->
+	
+	<script>
+function openMediaModal(clickedMedia) {
+
+  const modal = document.getElementById('mediaModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "flex";
+
+  if (clickedMedia.tagName === "IMG") {
+
+    modalImage.src = clickedMedia.src;
+    modalImage.alt = clickedMedia.alt;
+
+    modalImage.style.display = "block";
+    modalVideo.style.display = "none";
+
+  } else if (clickedMedia.tagName === "VIDEO") {
+
+    modalVideo.src = clickedMedia.currentSrc || clickedMedia.src;
+
+    modalVideo.style.display = "block";
+    modalImage.style.display = "none";
+  }
+}
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+	function closeMediaModal(event) {
+
+  // Only close when clicking the modal background
+  if (event.target !== event.currentTarget) {
+    return;
+  }
+
+  const modal = document.getElementById('mediaModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  modal.style.display = "none";
+
+  modalVideo.pause();
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</script>
+	
+	
+	
+	<div id="mediaModal" class="media-modal" onclick="closeMediaModal(event)">
+
+  <span class="close-modal">&times;</span>
+
+  <img id="modalImage" class="modal-content">
+
+  <video 
+    id="modalVideo" 
+    class="modal-content" 
+    controls
+    onclick="event.stopPropagation()">
+  </video>
+
+</div>
+	
+	
+</body>
+	
+</html>
