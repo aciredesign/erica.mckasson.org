@@ -116,6 +116,17 @@
     <h1>Featured projects</h1>
   </div>
   <hr>
+	  <section id="include_tandc"> 
+    <script>
+        // Fetch external file and inject it into the target div
+        fetch('include_tandc.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('include_tandc').innerHTML = data;
+            });
+    </script> 
+  </section>
+  <hr>
   <section id="include_wings"> 
     <script>
         // Fetch external file and inject it into the target div
@@ -149,17 +160,7 @@
     </script> 
   </section>
   <hr>
-	  <section id="include_tandc"> 
-    <script>
-        // Fetch external file and inject it into the target div
-        fetch('include_tandc.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('include_tandc').innerHTML = data;
-            });
-    </script> 
-  </section>
-  <hr>
+	
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2026 Erica McKasson</div>
   </footer>
